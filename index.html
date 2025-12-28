@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratandeep Purohit | Software Engineer & AI Enthusiast</title>
+    <meta name="description"
+        content="Portfolio of Ratandeep Purohit - Software Engineer specializing in Python, AI/ML, and Scalable Web Solutions.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">RP<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Pathway</a></li>
+            <li><a href="#contact" class="btn-contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3 class="greeting">Hello, I'm</h3>
+            <h1 class="name">Ratandeep Purohit</h1>
+            <h2 class="role">I am a <span class="typing-text"></span></h2>
+            <p class="tagline">Transforming complex problems into elegant, intelligent software solutions.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Work</a>
+                <a href="resume.pdf" class="btn btn-secondary" download><i class="fas fa-download"></i> Resize
+                    Resume</a>
+                <!-- Note: resume.pdf is a placeholder link as user requested a button -->
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-img-card" data-tilt>
+                    <!-- Abstract Tech Image -->
+                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=800&auto=format&fit=crop"
+                        alt="Coding Setup">
+                </div>
+                <div class="about-text">
+                    <h3>Software Engineer & Researcher</h3>
+                    <p>
+                        I am a motivated <strong>MCA Student</strong> and Software Engineer based in Ahmedabad,
+                        passionate about building robust applications and exploring the frontiers of <strong>Artificial
+                            Intelligence</strong>.
+                    </p>
+                    <p>
+                        With a strong foundation in <strong>Python, Data Structures, and System Design</strong>, I
+                        thrive in analytical problem-solving environments. Whether it's developing AI-powered monitoring
+                        systems or creating efficient web applications, I focus on scalability, performance, and user
+                        experience.
+                    </p>
+                    <p>
+                        Currently dealing with advanced research in Computer Science and preparing for GATE to further
+                        specialize in tech.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>3+</h4>
+                            <p>Major Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>2+</h4>
+                            <p>Certifications</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>MCA</h4>
+                            <p>Pursuing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical <span class="highlight">Arsenal</span></h2>
+
+            <div class="skills-wrapper">
+                <!-- Languages -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Python (Advanced)</p>
+                                <span class="percent">90%</span>
+                            </div>
+                            <div class="bar"><span class="progress python"></span></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Java (Advanced)</p>
+                                <span class="percent">85%</span>
+                            </div>
+                            <div class="bar"><span class="progress java"></span></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>C++ / PHP</p>
+                                <span class="percent">70%</span>
+                            </div>
+                            <div class="bar"><span class="progress cpp"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI / ML & Frameworks -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI / ML & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span>Flask</span>
+                        <span>Django</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>OpenCV</span>
+                        <span>Scikit-learn</span>
+                        <span>Matplotlib</span>
+                        <span>FastAPI</span>
+                    </div>
+                </div>
+
+                <!-- IDEs & Environment -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> IDEs & Environment</h3>
+                    <div class="skill-tags">
+                        <span>VS Code</span>
+                        <span>PyCharm</span>
+                        <span>Jupyter Notebook</span>
+                        <span>Replit</span>
+                        <span>Android Studio</span>
+                        <span>Windsurf (Codeium)</span>
+                    </div>
+                </div>
+
+                <!-- Development Concepts -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-lightbulb"></i> Development Concepts</h3>
+                    <div class="skill-tags">
+                        <span>OOP</span>
+                        <span>Data Structures</span>
+                        <span>IoT Basics</span>
+                        <span>DBMS</span>
+                        <span>Web Dev Fundamentals</span>
+                        <span>Problem Solving</span>
+                        <span>Algorithm Design</span>
+                    </div>
+                </div>
+
+                <!-- Software Engineering -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Software Engineering</h3>
+                    <div class="skill-tags">
+                        <span>SDLC</span>
+                        <span>Agile & Waterfall</span>
+                        <span>Requirement Analysis</span>
+                        <span>Unit & Integration Testing</span>
+                        <span>Git/GitHub</span>
+                        <span>Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="section">
+        <div class="container">
+            <h2 class="section-title">Personal <span class="highlight">Interests</span></h2>
+            <div class="interests-grid">
+                <!-- Interest 1 -->
+                <div class="interest-card">
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI & ML Exploration</h3>
+                    <p>Building smart applications and experimenting with NLP, Computer Vision, and predictive models.
+                    </p>
+                </div>
+                <!-- Interest 2 -->
+                <div class="interest-card">
+                    <div class="icon"><i class="fab fa-github"></i></div>
+                    <h3>Open-Source</h3>
+                    <p>Actively experimenting with GitHub projects and contributing to community-driven software.</p>
+                </div>
+                <!-- Interest 3 -->
+                <div class="interest-card">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data-Driven Decision</h3>
+                    <p>Analysing datasets to uncover patterns, trends, and actionable insights.</p>
+                </div>
+                <!-- Interest 4 -->
+                <div class="interest-card">
+                    <div class="icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Tech Blogging</h3>
+                    <p>Writing about programming, software trends, and project learnings.</p>
+                </div>
+                <!-- Interest 5 -->
+                <div class="interest-card">
+                    <div class="icon"><i class="fas fa-wifi"></i></div>
+                    <h3>IoT & Smart Systems</h3>
+                    <p>Experimenting with connected devices and automation for real-world applications.</p>
+                </div>
+                <!-- Interest 6 -->
+                <div class="interest-card">
+                    <div class="icon"><i class="fas fa-flask"></i></div>
+                    <h3>Research</h3>
+                    <p>Conducting independent and collaborative research in computer science and emerging technologies.
+                    </p>
+                </div>
+                <!-- Interest 7 -->
+                <div class="interest-card">
+                    <div class="icon"><i class="fas fa-user-astronaut"></i></div>
+                    <h3>Space Science</h3>
+                    <p>Exploring astronomy, astrophysics, and futuristic space technologies.</p>
+                </div>
+                <!-- Interest 8 -->
+                <div class="interest-card">
+                    <div class="icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Gaming</h3>
+                    <p>Engaging with strategy and simulation games to enhance problem-solving and creative thinking.</p>
+                </div>
+                <!-- Interest 9 -->
+                <div class="interest-card">
+                    <div class="icon"><i class="fas fa-hashtag"></i></div>
+                    <h3>Social Media & Trends</h3>
+                    <p>Observing online platforms for technology, marketing, and community engagement insights.</p>
+                </div>
+                <!-- Interest 10 -->
+                <div class="interest-card">
+                    <div class="icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Emerging Tech</h3>
+                    <p>Keeping up-to-date with latest technologies like blockchain, AR/VR, and cloud computing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            <div class="projects-grid">
+
+                <!-- Project 1: DigiTechHealth (Primary) -->
+                <div class="project-card"
+                    style="border: 1px solid var(--neon-blue); box-shadow: 0 0 20px rgba(0, 243, 255, 0.15);">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop"
+                            alt="DigiTechHealth">
+                        <div class="overlay">
+                            <a href="https://github.com/Ratandeep-purohit/DigiTechHealth" target="_blank"
+                                class="icon-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 style="color: var(--neon-blue);">DigiTechHealth <span
+                                style="font-size:0.7em; color:var(--text-muted); font-weight:400;">(Full Stack)</span>
+                        </h3>
+                        <p style="color: #fff; font-weight: 500; margin-bottom: 5px;">End-to-end Hospital Operations
+                            Platform</p>
+                        <p class="description">A premium Flask application designed to streamline healthcare workflows.
+                            Features Role-Based Access Control, secure authentication, and a glassmorphism UI for
+                            Doctors, Patients, and Admins.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Flask & Login</span>
+                            <span>SQLAlchemy</span>
+                            <span>Tailwind CSS</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Pharmacy API -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=800&auto=format&fit=crop"
+                            alt="Pharmacy API">
+                        <div class="overlay">
+                            <a href="https://github.com/Ratandeep-purohit/Pharmacy-Management-System-REST-API-"
+                                target="_blank" class="icon-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pharmacy Management API <span
+                                style="font-size:0.7em; color:var(--text-muted); font-weight:400;">(Backend)</span></h3>
+                        <p class="description">Production-ready RESTful API managing pharmacy operations. Implements
+                            Clean Architecture, JWT Authentication, Marshmallow validation, and Role-Based Access
+                            Control.</p>
+                        <div class="tech-stack">
+                            <span>Flask REST API</span>
+                            <span>JWT Auth</span>
+                            <span>MySQL</span>
+                            <span>Marshmallow</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: AI Exam System (Existing) -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=800&auto=format&fit=crop"
+                            alt="AI Exam System">
+                        <div class="overlay">
+                            <a href="https://github.com/Ratandeep-purohit/OnlineExamSystem" target="_blank"
+                                class="icon-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI-Powered Exam Monitor</h3>
+                        <p class="description">Secure online examination platform with AI-based proctoring and facial
+                            recognition using OpenCV and Cloud Storage.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>MongoDB</span>
+                            <span>AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Fake News Detector (Existing) -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=800&auto=format&fit=crop"
+                            alt="Fake News Detector">
+                        <div class="overlay">
+                            <a href="https://github.com/Ratandeep-purohit/FakeNewsDetector" target="_blank"
+                                class="icon-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fake News Detector</h3>
+                        <p class="description">Real-time news verification system using NLP (TF-IDF) & Logistic
+                            Regression to classify articles with analytics dashboards.</p>
+                        <div class="tech-stack">
+                            <span>NLP</span>
+                            <span>Streamlit</span>
+                            <span>PostgreSQL</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Expense Tracker (Existing) -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800&auto=format&fit=crop"
+                            alt="Expense Tracker">
+                        <div class="overlay">
+                            <a href="https://github.com/Ratandeep-purohit/java-expense-tracker" target="_blank"
+                                class="icon-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Java Swing Expense Tracker</h3>
+                        <p class="description">Finance management app with MVC architecture, transaction tracking,
+                            visual analytics, and CSV data persistence.</p>
+                        <div class="tech-stack">
+                            <span>Java Core</span>
+                            <span>Swing</span>
+                            <span>MVC Pattern</span>
+                            <span>Data Viz</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Education Pathway -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Journey</span></h2>
+            <div class="timeline">
+
+                <!-- Item 1 -->
+                <div class="timeline-item left">
+                    <div class="content">
+                        <span class="date">2025 - Present (2027)</span>
+                        <h3>Master of Computer Applications</h3>
+                        <h4>Silver Oak University, Ahmedabad</h4>
+                        <p>Pursuing advanced studies in software architecture and computer science.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item right">
+                    <div class="content">
+                        <span class="date">Nov 2025</span>
+                        <h3>Certifications: Python & Networking</h3>
+                        <h4>Scaler Topics</h4>
+                        <p>Mastered advanced Python development and deep-dived into core Networking protocols (OSI,
+                            TCP/IP).</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item left">
+                    <div class="content">
+                        <span class="date">Completed 2025</span>
+                        <h3>Bachelor of Computer Applications</h3>
+                        <h4>Shree Jain PG College</h4>
+                        <p>Graduated with 7.72 CGPA. Foundations in programming and application development.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-card">
+                <div class="contact-content">
+                    <h3>Let's Build Something Amazing Together</h3>
+                    <p>Open for Software Engineer and Python Developer roles.</p>
+                    <div class="contact-links">
+                        <a href="mailto:Rajatpurohit183@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i>
+                            Rajatpurohit183@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/ratandeep-purohit-ab0309304/" target="_blank"
+                            class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/Ratandeep-purohit" target="_blank" class="contact-btn"><i
+                                class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with <i class="fas fa-heart" style="color: var(--neon-pink);"></i> by Ratandeep Purohit | © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
