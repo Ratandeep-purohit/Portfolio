@@ -11,10 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentWord = words[wordIndex];
 
         if (isDeleting) {
-            typingText.textContent = currentWord.substring(0, charIndex--);
+            charIndex--;
         } else {
-            typingText.textContent = currentWord.substring(0, charIndex++);
+            charIndex++;
         }
+
+        typingText.textContent = currentWord.substring(0, charIndex);
 
         // Dynamic speed
         let typeSpeed = isDeleting ? 100 : 200;
@@ -128,7 +130,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // --- 5. Vanilla Tilt Effect (Simple Version) ---
+    // --- 5. Custom Cursor Glow ---
+    const cursorGlow = document.createElement('div');
+    cursorGlow.className = 'cursor-glow';
+    document.body.appendChild(cursorGlow);
+
+    window.addEventListener('mousemove', (e) => {
+        cursorGlow.style.left = e.clientX + 'px';
+        cursorGlow.style.top = e.clientY + 'px';
+    });
+
+    // --- 6. Vanilla Tilt Effect (Simple Version) ---
     const tiltElements = document.querySelectorAll('[data-tilt]');
 
     tiltElements.forEach(item => {
@@ -151,6 +163,32 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('mouseleave', () => {
             item.querySelector('img').style.transform = `scale(1) perspective(1000px) rotateX(0) rotateY(0)`;
         });
+    });
+
+    // --- 7. Theme Toggle Logic ---
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('i');
+    const body = document.body;
+
+    // Check for saved theme preference
+    if (localStorage.getItem('theme') === 'light') {
+        body.classList.add('light-mode');
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+        const isLight = body.classList.contains('light-mode');
+
+        // Update persistent storage
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+
+        // Update icon with animation
+        if (isLight) {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        } else {
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+        }
     });
 
 });

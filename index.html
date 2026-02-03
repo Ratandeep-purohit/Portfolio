@@ -23,6 +23,11 @@
 
 <body>
 
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
     <!-- Particle Background -->
     <div id="particles-js"></div>
 
@@ -53,7 +58,7 @@
             <p class="tagline">Transforming complex problems into elegant, intelligent software solutions.</p>
             <div class="hero-btns">
                 <a href="#projects" class="btn btn-primary">View Work</a>
-                <a href="resume.pdf" class="btn btn-secondary" download><i class="fas fa-download"></i> Resize
+                <a href="resume.pdf" class="btn btn-secondary" download><i class="fas fa-download"></i> Download My
                     Resume</a>
                 <!-- Note: resume.pdf is a placeholder link as user requested a button -->
             </div>
@@ -279,7 +284,38 @@
             <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
             <div class="projects-grid">
 
-                <!-- Project 1: DigiTechHealth (Primary) -->
+                <!-- Project 1: BURNOUT-X (Primary) -->
+                <div class="project-card"
+                    style="border: 1px solid var(--neon-purple); box-shadow: 0 0 20px rgba(188, 19, 254, 0.15);">
+                    <div class="project-img">
+                        <img src="burnout-x.png" alt="BURNOUT-X">
+                        <div class="overlay">
+                            <a href="https://github.com/Ratandeep-purohit/AETHER" target="_blank" class="icon-btn"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 style="color: var(--neon-purple);">BURNOUT-X <span
+                                style="font-size:0.7em; color:var(--text-muted); font-weight:400;">(AI Architect)</span>
+                        </h3>
+                        <p style="color: var(--text-color); font-weight: 500; margin-bottom: 5px;">Enterprise AI Burnout
+                            Prediction
+                        </p>
+                        <p class="description">Production-ready AI system predicting burnout risk 4 weeks early using
+                            multi-modal signal processing (XGBoost + SHAP). Features a high-performance React dashboard.
+                        </p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>React</span>
+                            <span>XGBoost</span>
+                            <span>Tailwind CSS</span>
+                            <span>Framer Motion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: DigiTechHealth -->
                 <div class="project-card"
                     style="border: 1px solid var(--neon-blue); box-shadow: 0 0 20px rgba(0, 243, 255, 0.15);">
                     <div class="project-img">
@@ -294,7 +330,8 @@
                         <h3 style="color: var(--neon-blue);">DigiTechHealth <span
                                 style="font-size:0.7em; color:var(--text-muted); font-weight:400;">(Full Stack)</span>
                         </h3>
-                        <p style="color: #fff; font-weight: 500; margin-bottom: 5px;">End-to-end Hospital Operations
+                        <p style="color: var(--text-color); font-weight: 500; margin-bottom: 5px;">End-to-end Hospital
+                            Operations
                             Platform</p>
                         <p class="description">A premium Flask application designed to streamline healthcare workflows.
                             Features Role-Based Access Control, secure authentication, and a glassmorphism UI for
