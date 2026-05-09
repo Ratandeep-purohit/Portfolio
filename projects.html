@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary SEO -->
+    <title>Enterprise Projects | Ratandeep Purohit</title>
+    <meta name="title" content="Enterprise Projects | Ratandeep Purohit">
+    <meta name="description"
+        content="Explore the engineering portfolio of Ratandeep Purohit. Case studies include BURNOUT-X, Multi-Agent SalesOps Arena, Seekora, and SentinelLite.">
+    <meta name="keywords"
+        content="Ratandeep Purohit, Projects, Portfolio, Software Engineering, BURNOUT-X, Machine Learning, Multi-Agent, React, FastAPI">
+    <meta name="author" content="Ratandeep Purohit">
+    <link rel="canonical" href="https://ratandeep-purohit.github.io/Portfolio/projects.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ratandeep-purohit.github.io/Portfolio/projects.html">
+    <meta property="og:title" content="Enterprise Projects | Ratandeep Purohit">
+    <meta property="og:description"
+        content="Explore the engineering portfolio of Ratandeep Purohit. Case studies include BURNOUT-X, Multi-Agent SalesOps Arena, and more.">
+    <meta property="og:image" content="https://ratandeep-purohit.github.io/Portfolio/burnout-x.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ratandeep-purohit.github.io/Portfolio/projects.html">
+    <meta name="twitter:title" content="Enterprise Projects | Ratandeep Purohit">
+    <meta name="twitter:description" content="Explore the engineering portfolio of Ratandeep Purohit.">
+    <meta name="twitter:image" content="https://ratandeep-purohit.github.io/Portfolio/burnout-x.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=4.0">
+</head>
+
+<body class="dark-theme">
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- ═══════════════════════ HEADER / NAV ═══════════════════════ -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo" aria-label="Home">RP<span class="dot">.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="experience.html">Education & Experience</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html" class="nav-cta">Hire Me</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ═══════════════════════ PAGE HERO ═══════════════════════ -->
+        <section class="page-hero" aria-label="Projects Hero Section">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            
+            <div class="container page-hero-container">
+                <span class="section-badge" data-aos="fade-down">My Work</span>
+                <h1 class="page-title" data-aos="fade-up" data-aos-delay="100">Enterprise <span class="gradient-text">Case Studies</span></h1>
+                <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    A deep dive into the systems I've engineered. From multi-agent reinforcement learning arenas to predictive healthcare platforms and distributed search engines.
+                </p>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════ PROJECTS GRID & FILTER ═══════════════════════ -->
+        <section class="section" aria-label="Projects Showcase">
+            <div class="container">
+                
+                <!-- Filters -->
+                <div class="project-filters-premium" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ai">AI / Gen AI</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="backend">Backend Arch</button>
+                    <button class="filter-btn" data-filter="cybersec">Cyber Security</button>
+                </div>
+
+                <div class="projects-grid projects-grid-page">
+                    
+                    <!-- Project 1: BURNOUT-X -->
+                    <article class="project-card" data-category="ai fullstack" data-aos="fade-up">
+                        <div class="project-img-wrap">
+                            <img src="burnout-x.png" alt="BURNOUT-X AI Dashboard" loading="lazy">
+                            <div class="project-category-tag">AI / Full Stack</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>BURNOUT-X</h3>
+                            <div class="problem-solved-box">
+                                <strong>Problem:</strong> High enterprise turnover due to undetected employee burnout.
+                            </div>
+                            <p>Enterprise AI system predicting employee burnout risk <strong>4 weeks early</strong> using multi-modal signal processing (XGBoost + SHAP). Integrates a high-performance React dashboard with real-time risk analytics.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>FastAPI</span><span>React</span><span>XGBoost</span><span>Tailwind</span>
+                            </div>
+                            <div class="project-links-row">
+                                <a href="https://github.com/Ratandeep-purohit/AETHER" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Multi-Agent SalesOps Arena -->
+                    <article class="project-card" data-category="ai backend" data-aos="fade-up">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop" alt="Multi-Agent RL Arena" loading="lazy">
+                            <div class="project-category-tag">Reinforcement Learning / Gen AI</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Multi-Agent SalesOps Arena</h3>
+                            <div class="problem-solved-box">
+                                <strong>Problem:</strong> Sales operations face conflicting optimization goals (Revenue vs Cost vs Risk) that single agents cannot resolve.
+                            </div>
+                            <p>An advanced Enterprise Reinforcement Learning environment built with OpenEnv. Simulates corporate CRM dynamics where independent AI agents (Sales, Finance, Compliance) develop optimal business decision policies through interaction, Bellman Q-Learning, and a Hugging Face Mistral-7B reasoning layer.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>OpenEnv</span><span>RL</span><span>Mistral-7B</span><span>Streamlit</span>
+                            </div>
+                            <div class="project-links-row">
+                                <a href="https://github.com/Ratandeep-purohit/Multi-Agent-SalesOps" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
+                                    <i class="fab fa-github"></i> GitHub Repo
+                                </a>
+                                <a href="https://huggingface.co/spaces/Ratandeep-purohit/Multi-Agent-SalesOps" target="_blank" rel="noopener noreferrer" class="proj-link-btn proj-link-secondary">
+                                    <i class="fas fa-play"></i> Live HF Demo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: LibraTech -->
+                    <article class="project-card" data-category="fullstack backend" data-aos="fade-up">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1200&auto=format&fit=crop" alt="LibraTech Library Management System" loading="lazy">
+                            <div class="project-category-tag">Full Stack / Enterprise LMS</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>LibraTech</h3>
+                            <div class="problem-solved-box">
+                                <strong>Problem:</strong> Educational institutions face fragmented cataloging, fee tracking, and stock visibility.
+                            </div>
+                            <p>A comprehensive, enterprise-ready Library Management System (LMS). Features real-time book circulation tracking, automated overdue fine calculation, dynamic time-range analytics dashboards, and integrated fee collection. Built with strict Role-Based Access Control and a premium Glassmorphism interface.</p>
+                            <div class="project-tags">
+                                <span>Flask 3.0</span><span>SQLAlchemy</span><span>MySQL 8.0</span><span>Tailwind CSS</span><span>OpenPyXL</span>
+                            </div>
+                            <div class="project-links-row">
+                                <a href="https://github.com/Ratandeep-purohit/libratech" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
+                                    <i class="fab fa-github"></i> GitHub Repo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Seekora -->
+                    <article class="project-card" data-category="fullstack backend" data-aos="fade-up">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=800&auto=format&fit=crop" alt="Seekora Search Engine" loading="lazy">
+                            <div class="project-category-tag">Full Stack Architecture</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Seekora Search Engine</h3>
+                            <div class="problem-solved-box">
+                                <strong>Problem:</strong> Need for a highly scalable, custom internal indexing solution.
+                            </div>
+                            <p>Industry-standard distributed search engine featuring a custom high-throughput crawler, a Lucene-based inverted indexer, and a hybrid ranking system.</p>
+                            <div class="project-tags">
+                                <span>Django</span><span>React</span><span>TypeScript</span><span>MySQL</span>
+                            </div>
+                            <div class="project-links-row">
+                                <a href="https://github.com/Ratandeep-purohit/Seekora" target="_blank" rel="noopener noreferrer" class="proj-link-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: SentinelLite -->
+                    <article class="project-card" data-category="cybersec backend" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop" alt="SentinelLite Cybersecurity" loading="lazy">
+                            <div class="project-category-tag">Cyber Security</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>SentinelLite</h3>
+                            <div class="problem-solved-box">
+                                <strong>Problem:</strong> High resource consumption of traditional AVs on legacy systems.
+                            </div>
+                            <p>Professional-grade cybersecurity tool featuring a lightweight heuristic malware detection engine, real-time threat telemetry charts, and an isolated quarantine vault.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>PyQt5</span><span>SQLite</span><span>Matplotlib</span>
+                            </div>
+                            <div class="project-links-row">
+                                <a href="https://github.com/TitanGuard-Labs/SentinelLite" target="_blank" rel="noopener noreferrer" class="proj-link-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: DigiTechHealth -->
+                    <article class="project-card" data-category="fullstack" data-aos="fade-up">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop" alt="DigiTechHealth Hospital Management" loading="lazy">
+                            <div class="project-category-tag">Full Stack</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>DigiTechHealth</h3>
+                            <div class="problem-solved-box">
+                                <strong>Problem:</strong> Fragmented hospital operations and insecure patient record keeping.
+                            </div>
+                            <p>End-to-end Hospital Operations Platform streamlining workflows with stringent RBAC (Role-Based Access Control), secure auth, and a premium glassmorphic UI.</p>
+                            <div class="project-tags">
+                                <span>Flask</span><span>SQLAlchemy</span><span>Tailwind</span><span>SQLite</span>
+                            </div>
+                            <div class="project-links-row">
+                                <a href="https://github.com/Ratandeep-purohit/DigiTechHealth" target="_blank" rel="noopener noreferrer" class="proj-link-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 6: WASP-Guard -->
+                    <article class="project-card" data-category="cybersec ai backend" data-aos="fade-up">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop" alt="WASP-Guard Chrome Extension" loading="lazy">
+                            <div class="project-category-tag">Chrome Extension / WASM</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>WASP-Guard</h3>
+                            <div class="problem-solved-box">
+                                <strong>Problem:</strong> Traditional spam detectors compromise user privacy by sending email data to the cloud.
+                            </div>
+                            <p>An advanced Chrome Extension that performs <strong>100% client-side</strong> spam detection within Gmail using Python via WebAssembly (Pyodide). Ensures zero data leakage and works offline by running a browser-embedded runtime.</p>
+                            <div class="project-tags">
+                                <span>Python (WASM)</span><span>Pyodide</span><span>Javascript</span><span>Manifest V3</span>
+                            </div>
+                            <div class="project-links-row">
+                                <a href="https://github.com/Ratandeep-purohit/Gmail-WASM-Spam-Detector" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
+                                    <i class="fab fa-github"></i> GitHub Repo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 7: Lumina Study -->
+                    <article class="project-card" data-category="fullstack ai backend" data-aos="fade-up">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop" alt="Lumina Study Platform" loading="lazy">
+                            <div class="project-category-tag">AI Study Planner / MERN</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Lumina Study</h3>
+                            <div class="problem-solved-box">
+                                <strong>Problem:</strong> Students struggle with academic friction, static task lists, and inefficient study habits.
+                            </div>
+                            <p>A high-performance, AI-driven study planning platform. Features AI task decomposition, automated active recall (flashcard generation), and productivity analytics. Built with a premium Glassmorphic Light Theme on the MERN stack.</p>
+                            <div class="project-tags">
+                                <span>MongoDB</span><span>Express.js</span><span>React 18</span><span>Node.js</span><span>Advanced AI</span>
+                            </div>
+                            <div class="project-links-row">
+                                <a href="https://github.com/Ratandeep-purohit/lumina-study" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
+                                    <i class="fab fa-github"></i> GitHub Repo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: Feelio -->
+                    <article class="project-card" data-category="fullstack ai backend" data-aos="fade-up">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800&auto=format&fit=crop" alt="Feelio Mental Wellness Platform" loading="lazy">
+                            <div class="project-category-tag">AI Mental Wellness / Flask</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Feelio</h3>
+                            <div class="problem-solved-box">
+                                <strong>Problem:</strong> Mental health crises often build slowly through unnoticed emotional shifts and behavioral patterns.
+                            </div>
+                            <p>An advanced open-source emotional awareness platform. Features AI-driven drift detection, burnout probability calculation, and proactive care pathway routing. Integrates real-time sentiment analysis and high-end Chart.js visualizations.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Flask 3.0</span><span>MySQL 8.0</span><span>Chart.js 4.4</span><span>AI Engine</span>
+                            </div>
+                            <div class="project-links-row">
+                                <a href="https://github.com/Ratandeep-purohit/Feelio" target="_blank" rel="noopener noreferrer" class="proj-link-btn">
+                                    <i class="fab fa-github"></i> GitHub Repo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 9: Pharmacy Management API -->
+                    <article class="project-card" data-category="backend" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=800&auto=format&fit=crop" alt="Pharmacy API" loading="lazy">
+                            <div class="project-category-tag">Backend Microservice</div>
+                        </div>
+                        <div class="project-body">
+                            <h3>Pharmacy Management API</h3>
+                            <div class="problem-solved-box">
+                                <strong>Problem:</strong> Need for a secure, scalable, and stateless inventory management backbone.
+                            </div>
+                            <p>Production-ready RESTful API implementing Clean Architecture, JWT Authentication, Marshmallow schema validation, and multi-tier access control.</p>
+                            <div class="project-tags">
+                                <span>Flask API</span><span>JWT</span><span>MySQL</span><span>Docker</span>
+                            </div>
+                            <div class="project-links-row">
+                                <a href="https://github.com/Ratandeep-purohit/Pharmacy-Management-System-REST-API-" target="_blank" rel="noopener noreferrer" class="proj-link-btn"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════ CTA BANNER ═══════════════════════ -->
+        <section class="cta-banner" aria-label="Call to Action">
+            <div class="container">
+                <div class="cta-banner-inner" data-aos="zoom-in">
+                    <h2>Impressed by the <span class="gradient-text">Architecture</span>?</h2>
+                    <p>Let's build something scalable and intelligent for your organization.</p>
+                    <div class="cta-banner-btns">
+                        <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                        <a href="resume.pdf" class="btn btn-ghost" download><i class="fas fa-download"></i> Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+    <footer class="footer" aria-label="Site Footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">RP<span class="dot">.</span></div>
+                    <p>Software Engineer & AI Developer<br>based in Ahmedabad, India.</p>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="experience.html">Education & Experience</a></li>
+                        <li><a href="achievements.html">Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:Rajatpurohit183@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                        <li><a href="https://github.com/Ratandeep-purohit" target="_blank"><i class="fab fa-github"></i>
+                                GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/ratandeep-purohit-ab0309304/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                        <li><a href="resume.pdf" download><i class="fas fa-file-pdf"></i> Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Ratandeep Purohit. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="sitemap.xml">Sitemap</a>
+                    <a href="contact.html">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projects = document.querySelectorAll('.projects-grid-page .project-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    projects.forEach(project => {
+                        if (filterValue === 'all') {
+                            project.style.display = '';
+                            setTimeout(() => { project.style.opacity = '1'; project.style.transform = 'translateY(0)'; }, 50);
+                        } else {
+                            if (project.getAttribute('data-category').includes(filterValue)) {
+                                project.style.display = '';
+                                setTimeout(() => { project.style.opacity = '1'; project.style.transform = 'translateY(0)'; }, 50);
+                            } else {
+                                project.style.opacity = '0';
+                                project.style.transform = 'translateY(20px)';
+                                setTimeout(() => { project.style.display = 'none'; }, 300);
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <script src="script.js?v=4.0" defer></script>
+</body>
+
+</html>

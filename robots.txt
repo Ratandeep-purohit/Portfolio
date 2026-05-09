@@ -1,0 +1,12 @@
+# robots.txt for Ratandeep Purohit's Developer Portfolio
+# Allows all search engine crawlers to index the site
+
+User-agent: *
+Allow: /
+
+# Block access to any future admin or private directories
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location for search engines
+Sitemap: https://ratandeep-purohit.github.io/Portfolio/sitemap.xml
