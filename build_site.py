@@ -55,6 +55,7 @@ def get_header(title, description, canonical_path, og_image="burnout-x.png", sch
             <a href="index.html" class="logo" aria-label="Ratandeep Purohit Logo">RP<span class="dot">.</span></a>
             <ul class="nav-links">
                 <li><a href="index.html" data-page="home">Home</a></li>
+                <li><a href="about-ratandeep.html" data-page="about-ratandeep">Profile</a></li>
                 <li><a href="about.html" data-page="about">About</a></li>
                 <li><a href="skills.html" data-page="skills">Skills</a></li>
                 <li><a href="projects.html" data-page="projects">Projects</a></li>
@@ -85,7 +86,7 @@ def get_footer():
                     <a href="mailto:Rajatpurohit183@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="footer-links">
-                    <a href="sitemap.xml">Sitemap</a> | <a href="resume.pdf" target="_blank">Resume</a>
+                    <a href="about-ratandeep.html">Profile</a> | <a href="sitemap.xml">Sitemap</a> | <a href="resume.pdf" target="_blank">Resume</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -581,8 +582,50 @@ content_404 = '''
 </section>
 '''
 
+import re
+
+# Safely load manually updated files so the generator preserves them instead of reverting
+def extract_main(filepath):
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            html = f.read()
+            match = re.search(r'<main>(.*?)</main>', html, re.DOTALL)
+            return match.group(1) if match else ""
+    except:
+        return ""
+
+content_home = extract_main("index.html") or content_home
+content_projects = extract_main("projects.html") or content_projects
+content_contact = extract_main("contact.html") or content_contact
+content_about_ratandeep = extract_main("about-ratandeep.html")
+
+# Define new schema_home
+schema_home = """<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Ratandeep Purohit",
+  "url": "https://ratandeep-purohit.github.io/Portfolio/",
+  "image": "https://ratandeep-purohit.github.io/Portfolio/photos/pic.jpg",
+  "sameAs": [
+    "https://github.com/Ratandeep-purohit",
+    "https://www.linkedin.com/in/ratandeep-purohit-ab0309304/"
+  ],
+  "jobTitle": "Software Engineer & AI/ML Developer",
+  "description": "Indian Computer Scientist, Software Engineer, and AI/ML Developer specializing in production-grade AI systems, scalable backend architectures, and intelligent software products.",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Silver Oak University"
+  },
+  "knowsAbout": [
+    "Python", "FastAPI", "Django", "Flask", "Machine Learning", "Deep Learning", "Generative AI", "NLP", "React"
+  ]
+}
+</script>"""
+
 pages = [
-    ("index.html", "Ratandeep Purohit | Software Engineer & AI Developer", "Portfolio of Ratandeep Purohit - Software Engineer specializing in Python, AI/ML, FastAPI, Django, and modern web applications.", "/", content_home, schema_home),
+    ("index.html", "Ratandeep Purohit | Indian Computer Scientist, Software Engineer & AI/ML Developer", "Ratandeep Purohit is an Indian Computer Scientist, Software Engineer, and AI/ML Developer specializing in Python, FastAPI, Django, React, and scalable AI systems.", "/", content_home, schema_home),
+    ("about-ratandeep.html", "About Ratandeep Purohit | Indian Computer Scientist, Software Engineer & AI/ML Developer", "Ratandeep Purohit is an Indian Computer Scientist, Software Engineer, and AI/ML Developer known for AI-powered applications and enterprise software.", "/about-ratandeep.html", content_about_ratandeep, ""),
     ("about.html", "About Ratandeep Purohit | Software Engineer", "Learn about Ratandeep Purohit's background, education (MCA/BCA), and passion for AI and Software Engineering.", "/about.html", content_about, schema_about),
     ("skills.html", "Technical Skills | Ratandeep Purohit", "Explore the technical skills, programming languages, backend frameworks, and AI tools used by Ratandeep Purohit.", "/skills.html", content_skills, ""),
     ("projects.html", "Projects Portfolio | Ratandeep Purohit", "View case studies and technical details of projects built by Ratandeep Purohit including BURNOUT-X and Seekora.", "/projects.html", content_projects, ""),

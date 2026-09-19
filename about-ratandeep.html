@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary SEO -->
+    <title>About Ratandeep Purohit | Indian Computer Scientist, Software Engineer & AI/ML Developer</title>
+    <meta name="title" content="About Ratandeep Purohit | Indian Computer Scientist, Software Engineer & AI/ML Developer">
+    <meta name="description" content="Ratandeep Purohit (born 12 Nov 2004, Bikaner) is an Indian Computer Scientist, Software Engineer, and AI/ML Developer known for AI-powered applications and enterprise software.">
+    <meta name="author" content="Ratandeep Purohit">
+    <link rel="canonical" href="https://ratandeep-purohit.github.io/Portfolio/about-ratandeep.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://ratandeep-purohit.github.io/Portfolio/about-ratandeep.html">
+    <meta property="og:title" content="About Ratandeep Purohit | Indian Computer Scientist, Software Engineer & AI/ML Developer">
+    <meta property="og:description" content="Ratandeep Purohit is an Indian Computer Scientist, Software Engineer, and AI/ML Developer known for AI-powered applications and enterprise software.">
+    <meta property="og:image" content="https://ratandeep-purohit.github.io/Portfolio/photos/pic.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ratandeep-purohit.github.io/Portfolio/about-ratandeep.html">
+    <meta name="twitter:title" content="About Ratandeep Purohit | Indian Computer Scientist, Software Engineer & AI/ML Developer">
+    <meta name="twitter:description" content="Ratandeep Purohit is an Indian Computer Scientist, Software Engineer, and AI/ML Developer known for AI-powered applications and enterprise software.">
+    <meta name="twitter:image" content="https://ratandeep-purohit.github.io/Portfolio/photos/pic.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "@id": "https://ratandeep-purohit.github.io/Portfolio/#person",
+      "name": "Ratandeep Purohit",
+      "url": "https://ratandeep-purohit.github.io/Portfolio/",
+      "image": "https://ratandeep-purohit.github.io/Portfolio/photos/pic.jpg",
+      "jobTitle": "Software Engineer & AI/ML Developer",
+      "description": "Indian Computer Scientist, Software Engineer, and AI/ML Developer known for AI-powered applications and enterprise software.",
+      "birthDate": "2004-11-12",
+      "birthPlace": {
+        "@type": "Place",
+        "name": "Bikaner, Rajasthan, India"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Silver Oak University"
+        }
+      ],
+      "sameAs": [
+        "https://github.com/Ratandeep-purohit",
+        "https://www.linkedin.com/in/ratandeep-purohit-ab0309304/"
+      ],
+      "knowsAbout": [
+        "Software Engineering", "AI/ML", "AI-powered applications", "Machine Learning", "Python"
+      ]
+    }
+    </script>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=4.1">
+
+    <style>
+        /* ── Profile Page Specific Styles ── */
+        .profile-hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+        .profile-hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 80px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .profile-photo-col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-frame {
+            position: relative;
+            width: 340px;
+            height: 340px;
+        }
+        .profile-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--bg);
+            box-shadow: 0 0 0 1px var(--border), 0 20px 60px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 1;
+        }
+        .profile-ring {
+            position: absolute;
+            inset: -16px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, var(--blue), var(--purple), var(--green), var(--blue));
+            animation: spin 8s linear infinite;
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .profile-ring::after {
+            content: '';
+            position: absolute;
+            inset: 4px;
+            background: var(--bg);
+            border-radius: 50%;
+        }
+        .profile-glow {
+            position: absolute;
+            inset: -30px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(59,130,246,0.15), transparent 70%);
+            z-index: 0;
+        }
+        .floating-tag {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            padding: 9px 16px;
+            border-radius: 30px;
+            background: var(--bg2);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(12px);
+            font-size: 0.82rem;
+            font-weight: 700;
+            font-family: var(--font-h);
+            white-space: nowrap;
+            box-shadow: var(--shadow);
+            z-index: 10;
+        }
+        .ftag-1 { top: 5%; left: -12%; animation: pillFloat 3s ease-in-out infinite alternate; color: #3776AB; }
+        .ftag-2 { top: 80%; left: -8%; animation: pillFloat 3s ease-in-out infinite alternate; animation-delay: 0.8s; color: var(--green); }
+        .ftag-3 { top: 10%; right: -14%; animation: pillFloat 3s ease-in-out infinite alternate; animation-delay: 1.6s; color: var(--purple); }
+        .ftag-4 { top: 75%; right: -10%; animation: pillFloat 3s ease-in-out infinite alternate; animation-delay: 2.4s; color: var(--pink); }
+
+        /* Text col */
+        .profile-text-col { }
+        .profile-name {
+            font-family: var(--font-h);
+            font-size: clamp(2.6rem, 5vw, 4.2rem);
+            font-weight: 900;
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 16px;
+        }
+        .profile-role-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 28px;
+        }
+        .role-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 6px 16px;
+            border-radius: 30px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--muted);
+            font-family: var(--font-h);
+            transition: all 0.25s;
+        }
+        .role-badge i { color: var(--blue); }
+        .profile-bio {
+            font-size: 1.1rem;
+            color: var(--muted);
+            line-height: 1.8;
+            margin-bottom: 36px;
+            max-width: 520px;
+        }
+        .profile-bio strong { color: var(--text); }
+        .profile-social-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* ── Info Cards Grid ── */
+        .profile-cards-section {
+            padding: 80px 0;
+            background: var(--bg2);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .profile-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 50px;
+        }
+        .info-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px 28px;
+            transition: all 0.4s var(--ease);
+            position: relative;
+            overflow: hidden;
+        }
+        .info-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--grad);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .info-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(59,130,246,0.3);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+        .info-card:hover::before { opacity: 1; }
+        .info-card-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(59,130,246,0.1);
+            color: var(--blue);
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .info-card h3 {
+            font-family: var(--font-h);
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--blue);
+            margin-bottom: 16px;
+        }
+        .info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .info-row {
+            display: flex;
+            gap: 10px;
+            font-size: 0.92rem;
+            line-height: 1.5;
+        }
+        .info-label {
+            color: var(--muted);
+            font-weight: 600;
+            min-width: 90px;
+            flex-shrink: 0;
+        }
+        .info-value {
+            color: var(--text);
+            font-weight: 500;
+        }
+        .info-card-wide {
+            grid-column: span 2;
+        }
+
+        /* ── Projects & Products Tables ── */
+        .profile-items-section {
+            padding: 80px 0;
+        }
+        .profile-items-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            margin-top: 50px;
+        }
+        .item-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 30px 28px;
+            transition: all 0.4s var(--ease);
+        }
+        .item-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(59,130,246,0.3);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+        .item-card-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 24px;
+        }
+        .item-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        .item-icon-blue { background: rgba(59,130,246,0.12); color: var(--blue); }
+        .item-icon-purple { background: rgba(139,92,246,0.12); color: var(--purple); }
+        .item-card-header h3 {
+            font-family: var(--font-h);
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+        .item-card-header p {
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-top: 2px;
+        }
+        .item-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .item-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 14px 18px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border);
+            transition: all 0.25s;
+        }
+        .item-row:hover {
+            border-color: rgba(59,130,246,0.2);
+            background: rgba(59,130,246,0.04);
+        }
+        .item-row i {
+            color: var(--blue);
+            font-size: 0.9rem;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+        .item-row-text strong {
+            display: block;
+            font-family: var(--font-h);
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 2px;
+        }
+        .item-row-text span {
+            font-size: 0.82rem;
+            color: var(--muted);
+        }
+
+        /* ── Links Section ── */
+        .profile-links-row {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .profile-link-card {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 18px 24px;
+            border-radius: 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            transition: all 0.3s var(--ease);
+            flex: 1;
+            min-width: 200px;
+        }
+        .profile-link-card:hover {
+            border-color: rgba(59,130,246,0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+        }
+        .profile-link-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        .plk-github { background: rgba(255,255,255,0.08); color: #fff; }
+        .plk-linkedin { background: rgba(10,102,194,0.15); color: #0a66c2; }
+        .plk-web { background: rgba(59,130,246,0.12); color: var(--blue); }
+        .profile-link-info strong {
+            display: block;
+            font-family: var(--font-h);
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .profile-link-info span {
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+        .profile-link-arrow {
+            margin-left: auto;
+            color: var(--muted);
+            font-size: 0.85rem;
+            transition: transform 0.25s, color 0.25s;
+        }
+        .profile-link-card:hover .profile-link-arrow {
+            transform: translateX(4px);
+            color: var(--blue);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .profile-hero-grid { grid-template-columns: 1fr; gap: 50px; }
+            .profile-photo-col { order: -1; }
+            .profile-frame { width: 260px; height: 260px; }
+            .ftag-1, .ftag-2, .ftag-3, .ftag-4 { display: none; }
+            .profile-cards-grid { grid-template-columns: 1fr 1fr; }
+            .info-card-wide { grid-column: span 2; }
+            .profile-items-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 580px) {
+            .profile-cards-grid { grid-template-columns: 1fr; }
+            .info-card-wide { grid-column: span 1; }
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- ══════════ HEADER / NAV ══════════ -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo" aria-label="Home">RP<span class="dot">.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-ratandeep.html" class="active">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Education &amp; Experience</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html" class="nav-cta">Hire Me</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ══════════ HERO ══════════ -->
+        <section class="profile-hero" aria-label="Profile Hero">
+            <!-- Background Orbs -->
+            <div class="hero-bg-grid"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+
+            <div class="container">
+                <div class="profile-hero-grid">
+
+                    <!-- Photo Col -->
+                    <div class="profile-photo-col" data-aos="fade-right">
+                        <div class="profile-frame">
+                            <div class="profile-ring"></div>
+                            <div class="profile-glow"></div>
+                            <img src="photos/pic.jpg" alt="Ratandeep Purohit — Indian Computer Scientist and Software Engineer"
+                                 onerror="this.src='https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=800&auto=format&fit=crop'">
+                            <!-- Floating Tech Tags -->
+                            <div class="floating-tag ftag-1"><i class="fab fa-python"></i> Python</div>
+                            <div class="floating-tag ftag-2"><i class="fas fa-brain"></i> AI / ML</div>
+                            <div class="floating-tag ftag-3"><i class="fas fa-code"></i> Full‑Stack</div>
+                            <div class="floating-tag ftag-4"><i class="fas fa-microchip"></i> LLMs</div>
+                        </div>
+                    </div>
+
+                    <!-- Text Col -->
+                    <div class="profile-text-col" data-aos="fade-left">
+                        <span class="section-badge">Public Profile</span>
+                        <h1 class="profile-name">
+                            Ratandeep<br>
+                            <span class="gradient-text">Purohit</span>
+                        </h1>
+
+                        <div class="profile-role-badges">
+                            <span class="role-badge"><i class="fas fa-laptop-code"></i> Software Engineer</span>
+                            <span class="role-badge"><i class="fas fa-brain"></i> AI/ML Developer</span>
+                            <span class="role-badge"><i class="fas fa-globe-asia"></i> Indian CS</span>
+                        </div>
+
+                        <p class="profile-bio">
+                            Born in <strong>Bikaner, Rajasthan</strong>, Ratandeep is an Indian Computer Scientist
+                            building <strong>production-grade AI systems</strong>, enterprise SaaS products, and
+                            <strong>scalable full-stack architectures</strong>. Currently pursuing MCA at
+                            <strong>Silver Oak University</strong>.
+                        </p>
+
+                        <div class="profile-social-row">
+                            <a href="https://github.com/Ratandeep-purohit" target="_blank" rel="noopener noreferrer"
+                               class="social-pill" aria-label="GitHub">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/ratandeep-purohit-ab0309304/" target="_blank"
+                               rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="mailto:Rajatpurohit183@gmail.com" class="social-pill" aria-label="Email">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                            <a href="resume.pdf" class="btn btn-primary" download>
+                                <i class="fas fa-download"></i> Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════ INFO CARDS ══════════ -->
+        <section class="profile-cards-section" aria-label="Personal Information">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">Identity</span>
+                    <h2 class="section-title">Personal <span class="gradient-text">Details</span></h2>
+                    <p class="section-subtitle">Verified public information about Ratandeep Purohit.</p>
+                </div>
+
+                <div class="profile-cards-grid">
+
+                    <!-- Personal -->
+                    <div class="info-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="info-card-icon"><i class="fas fa-user"></i></div>
+                        <h3>Personal</h3>
+                        <dl class="info-list">
+                            <div class="info-row">
+                                <dt class="info-label">Full Name</dt>
+                                <dd class="info-value">Ratandeep Purohit</dd>
+                            </div>
+                            <div class="info-row">
+                                <dt class="info-label">Born</dt>
+                                <dd class="info-value">12 November 2004</dd>
+                            </div>
+                            <div class="info-row">
+                                <dt class="info-label">Birthplace</dt>
+                                <dd class="info-value">Bikaner, Rajasthan, India</dd>
+                            </div>
+                            <div class="info-row">
+                                <dt class="info-label">Based in</dt>
+                                <dd class="info-value">India</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <!-- Occupation -->
+                    <div class="info-card" data-aos="fade-up" data-aos-delay="80">
+                        <div class="info-card-icon" style="background:rgba(139,92,246,0.12);color:var(--purple);">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Occupation</h3>
+                        <dl class="info-list">
+                            <div class="info-row">
+                                <dt class="info-label">Field</dt>
+                                <dd class="info-value">Computer Science</dd>
+                            </div>
+                            <div class="info-row">
+                                <dt class="info-label">Roles</dt>
+                                <dd class="info-value">Software Engineer, AI/ML Developer</dd>
+                            </div>
+                            <div class="info-row">
+                                <dt class="info-label">Known for</dt>
+                                <dd class="info-value">AI-powered applications, Enterprise SaaS</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <!-- Education — wide -->
+                    <div class="info-card info-card-wide" data-aos="fade-up" data-aos-delay="160">
+                        <div class="info-card-icon" style="background:rgba(16,185,129,0.12);color:var(--green);">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <dl class="info-list">
+                            <div class="info-row">
+                                <dt class="info-label">Current</dt>
+                                <dd class="info-value">Master of Computer Applications (MCA) — Silver Oak University</dd>
+                            </div>
+                            <div class="info-row">
+                                <dt class="info-label">Previous</dt>
+                                <dd class="info-value">Bachelor of Computer Applications (BCA)</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════ PROJECTS & PRODUCTS ══════════ -->
+        <section class="profile-items-section" aria-label="Projects and Products">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">Work</span>
+                    <h2 class="section-title">Projects &amp; <span class="gradient-text">Products</span></h2>
+                    <p class="section-subtitle">Selected work built and shipped by Ratandeep Purohit.</p>
+                </div>
+
+                <div class="profile-items-grid">
+                    <!-- Projects Card -->
+                    <div class="item-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="item-card-header">
+                            <div class="item-icon item-icon-blue"><i class="fas fa-code-branch"></i></div>
+                            <div>
+                                <h3>Major Projects</h3>
+                                <p>Open-source & research work</p>
+                            </div>
+                        </div>
+                        <ul class="item-list" aria-label="Major projects by Ratandeep Purohit">
+                            <li class="item-row">
+                                <i class="fas fa-circle-dot"></i>
+                                <div class="item-row-text">
+                                    <strong>AI-Powered Voice Cloning Detection &amp; Prevention System</strong>
+                                    <span>ML · Deep Learning · Audio Forensics</span>
+                                </div>
+                            </li>
+                            <li class="item-row">
+                                <i class="fas fa-circle-dot"></i>
+                                <div class="item-row-text">
+                                    <strong>Multi-Agent SalesOps Arena</strong>
+                                    <span>Reinforcement Learning · OpenEnv · Mistral-7B</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div style="margin-top:24px;">
+                            <a href="projects.html" class="btn btn-outline" style="font-size:.85rem;padding:10px 22px;">
+                                View All Projects <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Products Card -->
+                    <div class="item-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="item-card-header">
+                            <div class="item-icon item-icon-purple"><i class="fas fa-box-open"></i></div>
+                            <div>
+                                <h3>Live Products</h3>
+                                <p>Enterprise SaaS shipped to production</p>
+                            </div>
+                        </div>
+                        <ul class="item-list" aria-label="Products built by Ratandeep Purohit">
+                            <li class="item-row">
+                                <i class="fas fa-circle-dot" style="color:var(--purple)"></i>
+                                <div class="item-row-text">
+                                    <strong>GlassEntials CRM</strong>
+                                    <span>Customer Relationship Management · Flask · MySQL</span>
+                                </div>
+                            </li>
+                            <li class="item-row">
+                                <i class="fas fa-circle-dot" style="color:var(--purple)"></i>
+                                <div class="item-row-text">
+                                    <strong>GlassEntials HRMS</strong>
+                                    <span>Human Resource Management · Django 5 · PostgreSQL</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div style="margin-top:24px;">
+                            <a href="index.html#products" class="btn btn-outline" style="font-size:.85rem;padding:10px 22px;">
+                                View Products <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Official Links -->
+                <div data-aos="fade-up">
+                    <div class="profile-links-row" role="list" aria-label="Official online profiles">
+                        <a href="https://ratandeep-purohit.github.io/Portfolio/" class="profile-link-card"
+                           target="_blank" rel="noopener noreferrer" role="listitem">
+                            <div class="profile-link-icon plk-web"><i class="fas fa-globe"></i></div>
+                            <div class="profile-link-info">
+                                <strong>Portfolio Website</strong>
+                                <span>ratandeep-purohit.github.io/Portfolio/</span>
+                            </div>
+                            <i class="fas fa-arrow-right profile-link-arrow"></i>
+                        </a>
+                        <a href="https://github.com/Ratandeep-purohit" class="profile-link-card"
+                           target="_blank" rel="noopener noreferrer" role="listitem">
+                            <div class="profile-link-icon plk-github"><i class="fab fa-github"></i></div>
+                            <div class="profile-link-info">
+                                <strong>GitHub</strong>
+                                <span>github.com/Ratandeep-purohit</span>
+                            </div>
+                            <i class="fas fa-arrow-right profile-link-arrow"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ratandeep-purohit-ab0309304/" class="profile-link-card"
+                           target="_blank" rel="noopener noreferrer" role="listitem">
+                            <div class="profile-link-icon plk-linkedin"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="profile-link-info">
+                                <strong>LinkedIn</strong>
+                                <span>linkedin.com/in/ratandeep-purohit-ab0309304</span>
+                            </div>
+                            <i class="fas fa-arrow-right profile-link-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ══════════ FOOTER ══════════ -->
+    <footer class="footer" aria-label="Site Footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">RP<span class="dot">.</span></div>
+                <div class="footer-socials">
+                    <a href="https://github.com/Ratandeep-purohit" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ratandeep-purohit-ab0309304/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:Rajatpurohit183@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="about-ratandeep.html">Profile</a> |
+                    <a href="sitemap.xml">Sitemap</a> |
+                    <a href="resume.pdf" target="_blank">Resume</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Ratandeep Purohit. All rights reserved.</p>
+                <p>Designed &amp; Built with <i class="fas fa-heart highlight-text"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
