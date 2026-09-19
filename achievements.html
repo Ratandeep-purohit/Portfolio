@@ -1,118 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>Achievements & Awards | Ratandeep Purohit</title>
-    <meta name="title" content="Achievements & Awards | Ratandeep Purohit">
-    <meta name="description" content="Hackathons, certifications, and open source contributions by Ratandeep Purohit.">
-    <meta name="keywords" content="Ratandeep Purohit, Software Engineer, AI Developer, Python, Machine Learning, React, FastAPI, Django">
+
+    <!-- Primary SEO -->
+    <title>Achievements and Certificates | Ratandeep Purohit</title>
+    <meta name="title" content="Achievements and Certificates | Ratandeep Purohit">
+    <meta name="description"
+        content="Showcasing major achievements, hackathon wins, and professional certifications of Ratandeep Purohit.">
+    <meta name="keywords"
+        content="Ratandeep Purohit, AI Hackathon, OpenEnv, Meta, Scaler, Software Engineer, Achievements, Awards">
     <meta name="author" content="Ratandeep Purohit">
     <link rel="canonical" href="https://ratandeep-purohit.github.io/Portfolio/achievements.html">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ratandeep-purohit.github.io/Portfolio/achievements.html">
-    <meta property="og:title" content="Achievements & Awards | Ratandeep Purohit">
-    <meta property="og:description" content="Hackathons, certifications, and open source contributions by Ratandeep Purohit.">
-    <meta property="og:image" content="https://ratandeep-purohit.github.io/Portfolio/burnout-x.png">
+    <meta property="og:title" content="Achievements and Certificates | Ratandeep Purohit">
+    <meta property="og:description"
+        content="Showcasing major achievements, hackathon wins, and professional certifications of Ratandeep Purohit.">
+    <meta property="og:image" content="https://ratandeep-purohit.github.io/Portfolio/photos/finalinhackathon.jpeg">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ratandeep-purohit.github.io/Portfolio/achievements.html">
-    <meta property="twitter:title" content="Achievements & Awards | Ratandeep Purohit">
-    <meta property="twitter:description" content="Hackathons, certifications, and open source contributions by Ratandeep Purohit.">
-    <meta property="twitter:image" content="https://ratandeep-purohit.github.io/Portfolio/burnout-x.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ratandeep-purohit.github.io/Portfolio/achievements.html">
+    <meta name="twitter:title" content="Achievements and Certificates | Ratandeep Purohit">
+    <meta name="twitter:description"
+        content="Showcasing major achievements, hackathon wins, and professional certifications of Ratandeep Purohit.">
+    <meta name="twitter:image" content="https://ratandeep-purohit.github.io/Portfolio/photos/finalinhackathon.jpeg">
 
-    <!-- Fonts & Icons -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
 
-    <!-- Main Stylesheet -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css?v=4.1">
-    
-    
 </head>
+
 <body class="dark-theme">
+
+    <!-- Theme Toggle -->
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
         <i class="fas fa-moon"></i>
     </button>
 
-    <header class="header">
+    <!-- ═══════════════════════ HEADER / NAV ═══════════════════════ -->
+    <header class="header" id="header">
         <nav class="navbar container">
-            <a href="index.html" class="logo" aria-label="Ratandeep Purohit Logo">RP<span class="dot">.</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html" data-page="home">Home</a></li>
-                <li><a href="about-ratandeep.html" data-page="about-ratandeep">Profile</a></li>
-                <li><a href="about.html" data-page="about">About</a></li>
-                <li><a href="skills.html" data-page="skills">Skills</a></li>
-                <li><a href="projects.html" data-page="projects">Projects</a></li>
-                <li><a href="experience.html" data-page="experience">Experience</a></li>
-                <li><a href="achievements.html" data-page="achievements">Achievements</a></li>
-                <li><a href="contact.html" class="btn-contact" data-page="contact">Hire Me</a></li>
+            <a href="index.html" class="logo" aria-label="Home">RP<span class="dot">.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Education & Experience</a></li>
+                <li><a href="achievements.html" class="active">Achievements and Certificates</a></li>
+                <li><a href="contact.html" class="nav-cta">Hire Me</a></li>
             </ul>
-            <div class="hamburger" aria-label="Toggle Menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
         </nav>
     </header>
+
     <main>
+        <!-- ═══════════════════════ PAGE HERO ═══════════════════════ -->
+        <section class="page-hero" aria-label="Achievements Hero Section">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
 
-<section class="section" style="padding-top: 150px;">
-    <div class="container">
-        <div class="section-header">
-            <h1 class="section-title">Awards & <span class="highlight">Achievements</span></h1>
-            <p class="section-subtitle">Hackathons, certifications, and public recognition</p>
-        </div>
+            <div class="container page-hero-container">
+                <span class="section-badge" data-aos="fade-down">Milestones & Recognition</span>
+                <h1 class="page-title" data-aos="fade-up" data-aos-delay="100">Achievements and <span
+                        class="gradient-text">Certificates</span></h1>
+                <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    A collection of competitive wins, professional certifications, and industry recognition earned
+                    through relentless building and innovation.
+                </p>
+            </div>
+        </section>
 
-        <div class="projects-grid">
-            <div class="glass-card" style="padding: 30px;">
-                <div class="icon-box" style="margin-bottom: 20px;"><i class="fas fa-trophy"></i></div>
-                <h3>Hackathons</h3>
-                <p style="color: var(--text-muted); margin-top: 10px;">Participated in 3+ major hackathons, leading teams to build innovative AI-driven and Full Stack solutions under tight deadlines. Developed prototypes focusing on social impact and enterprise efficiency.</p>
+        <!-- ═══════════════════════ HIGHLIGHT ACHIEVEMENT ═══════════════════════ -->
+        <section class="section" aria-label="Major Highlight">
+            <div class="container">
+                <div class="featured-achievement-card" data-aos="zoom-in">
+                    <div class="feat-ach-badge">India's Biggest AI Hackathon</div>
+                    <div class="feat-ach-grid">
+                        <div class="feat-ach-img">
+                            <img src="photos/finalinhackathon.jpeg" alt="India's Biggest AI Hackathon Finalist Card">
+                            <div class="feat-ach-overlay">
+                                <span>Bangalore | April 2026</span>
+                            </div>
+                        </div>
+                        <div class="feat-ach-content">
+                            <div class="feat-ach-partners">
+                                <i class="fab fa-meta"></i> <span>OpenEnv</span> <i class="fas fa-times"></i>
+                                <span>Scaler</span>
+                            </div>
+                            <h3>National Finale Finalist — Team RDJ</h3>
+                            <p class="feat-ach-stats">Top 800 <span class="muted">out of</span> 72,000+ <span
+                                    class="muted">Teams</span></p>
+                            <p class="feat-ach-desc">
+                                Successfully competed in India's premier AI Hackathon co-hosted by Meta and Scaler.
+                                Emerging as a national finalist from a massive pool of 72,000+ teams, demonstrating
+                                elite-level problem solving, AI integration, and rapid prototyping capabilities in
+                                Bangalore.
+                            </p>
+                            <div class="feat-ach-tags">
+                                <span>Generative AI</span><span>Meta Llama</span><span>System Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="glass-card" style="padding: 30px;">
-                <div class="icon-box" style="margin-bottom: 20px;"><i class="fas fa-certificate"></i></div>
-                <h3>Certifications</h3>
-                <p style="color: var(--text-muted); margin-top: 10px;">Earned 2+ professional certifications including Advanced Python & Networking from Scaler Topics, validating expertise in core programming constructs and network architecture.</p>
+        </section>
+
+        <!-- ═══════════════════════ CERTIFICATES SHOWCASE ═══════════════════════ -->
+        <section class="section" aria-label="Professional Certificates">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">Verification</span>
+                    <h2 class="section-title">Professional <span class="gradient-text">Certifications</span></h2>
+                    <p class="section-subtitle">Official credentials verifying expertise in Python, LangChain, and
+                        Networking.</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Certificate 1 -->
+                    <article class="project-card" data-aos="fade-up">
+                        <div class="project-img-wrap">
+                            <img src="photos/ratandeep_python-certificate.png" alt="Python Programming Certificate"
+                                loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>Advanced Python Programming</h3>
+                            <p>Deep dive into object-oriented programming, decorators, generators, and memory management
+                                in Python.</p>
+                            <div class="project-tags">
+                                <span>Python</span><span>Data Structures</span><span>Algorithms</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Certificate 2 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img-wrap">
+                            <img src="photos/langchain-pic.jpeg" alt="LangChain for LLM Apps Certificate"
+                                loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>LangChain & LLM Integration</h3>
+                            <p>Credential for building production-grade LLM applications, RAG pipelines, and AI agents
+                                using LangChain.</p>
+                            <div class="project-tags">
+                                <span>LangChain</span><span>LLMs</span><span>AI Agents</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Certificate 3 -->
+                    <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-img-wrap">
+                            <img src="photos/Networking.jpeg" alt="Asynchronous Networking Certificate" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>Asynchronous Networking</h3>
+                            <p>Specialization in high-performance network programming, socket communication, and
+                                asynchronous I/O.</p>
+                            <div class="project-tags">
+                                <span>Networking</span><span>AsyncIO</span><span>Sockets</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-            
-            <div class="glass-card" style="padding: 30px;">
-                <div class="icon-box" style="margin-bottom: 20px;"><i class="fab fa-github"></i></div>
-                <h3>Open Source & GitHub</h3>
-                <p style="color: var(--text-muted); margin-top: 10px;">Active contributor to the open-source community with numerous repositories demonstrating clean architecture, production-ready APIs, and complex AI integrations.</p>
+        </section>
+
+        <!-- ═══════════════════════ ALL ACHIEVEMENTS GRID ═══════════════════════ -->
+        <section class="section bg-alt" aria-label="All Achievements">
+            <div class="container">
+                <div class="achievements-premium-grid">
+
+                    <!-- Achievement 1: Hackathons -->
+                    <div class="ach-card-premium" data-aos="fade-up">
+                        <div class="ach-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="ach-info">
+                            <h3>Competitive Hackathons</h3>
+                            <p>Finalist and participant in 3+ major national hackathons. Led multi-disciplinary teams to
+                                build innovative solutions for enterprise automation and social impact.</p>
+                            <div class="ach-metric">3+ Major Competitions</div>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 2: Certifications -->
+                    <div class="ach-card-premium" data-aos="fade-up" data-aos-delay="100">
+                        <div class="ach-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="ach-info">
+                            <h3>Advanced Technical Certs</h3>
+                            <p>Earned professional certifications in Advanced Python, Asynchronous Networking, and
+                                Software Systems Engineering from Scaler Topics and other industry leaders.</p>
+                            <div class="ach-metric">Top 1% Scorer</div>
+                        </div>
+                    </div>
+
+                    <!-- Achievement 3: Open Source -->
+                    <div class="ach-card-premium" data-aos="fade-up" data-aos-delay="200">
+                        <div class="ach-icon"><i class="fab fa-github"></i></div>
+                        <div class="ach-info">
+                            <h3>Open Source Leadership</h3>
+                            <p>Developed and maintained high-impact open source projects like Feelio and WASP-Guard,
+                                contributing to the global developer ecosystem with 500+ commits.</p>
+                            <div class="ach-metric">Global Contributor</div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+
+        <!-- ═══════════════════════ CTA BANNER ═══════════════════════ -->
+        <section class="cta-banner" aria-label="Call to Action">
+            <div class="container">
+                <div class="cta-banner-inner" data-aos="zoom-in">
+                    <h2>Let's build the <span class="gradient-text">Future</span>.</h2>
+                    <p>I am always looking for challenging projects and world-class teams to join.</p>
+                    <div class="cta-banner-btns">
+                        <a href="contact.html" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In
+                            Touch</a>
+                        <a href="projects.html" class="btn btn-ghost"><i class="fas fa-code"></i> View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
-    <footer class="footer">
+
+    <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+    <footer class="footer" aria-label="Site Footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">RP<span class="dot">.</span></div>
-                <div class="footer-socials">
-                    <a href="https://github.com/Ratandeep-purohit" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/ratandeep-purohit-ab0309304/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:Rajatpurohit183@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">RP<span class="dot">.</span></div>
+                    <p>Software Engineer & AI Developer<br>based in Ahmedabad, India.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="about-ratandeep.html">Profile</a> | <a href="sitemap.xml">Sitemap</a> | <a href="resume.pdf" target="_blank">Resume</a>
+                <div class="footer-nav-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="experience.html">Education & Experience</a></li>
+                        <li><a href="achievements.html">Achievements and Certificates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:Rajatpurohit183@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                        <li><a href="https://github.com/Ratandeep-purohit" target="_blank"><i class="fab fa-github"></i>
+                                GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/ratandeep-purohit-ab0309304/" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                        <li><a href="resume.pdf" download><i class="fas fa-file-pdf"></i> Resume</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; <span id="current-year"></span> Ratandeep Purohit. All rights reserved.</p>
-                <p>Designed & Built with <i class="fas fa-heart highlight-text"></i></p>
+                <div class="footer-bottom-links">
+                    <a href="sitemap.xml">Sitemap</a>
+                    <a href="contact.html">Hire Me</a>
+                </div>
             </div>
         </div>
     </footer>
-    <script src="script.js" defer></script>
+
+    <script src="script.js?v=4.0" defer></script>
 </body>
+
 </html>
