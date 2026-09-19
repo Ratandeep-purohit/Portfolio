@@ -41,11 +41,11 @@ def get_header(title, description, canonical_path, og_image="burnout-x.png", sch
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="style.css?v=3.0">
+    <link rel="stylesheet" href="style.css?v=4.1">
     
     {schema_json}
 </head>
-<body>
+<body class="dark-theme">
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
         <i class="fas fa-moon"></i>
     </button>
@@ -595,6 +595,10 @@ def extract_main(filepath):
         return ""
 
 content_home = extract_main("index.html") or content_home
+content_about = extract_main("about.html") or content_about
+content_skills = extract_main("skills.html") or content_skills
+content_experience = extract_main("experience.html") or content_experience
+content_achievements = extract_main("achievements.html") or content_achievements
 content_projects = extract_main("projects.html") or content_projects
 content_contact = extract_main("contact.html") or content_contact
 content_about_ratandeep = extract_main("about-ratandeep.html")
